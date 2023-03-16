@@ -1,0 +1,74 @@
+l=0
+while l==0:
+    print("                                        ")
+    print("                                        ")
+    print("|___ALISHER ONLINE TUTION CENTRE_|")
+    print("                1.INSTRUCTERS                       ")   
+    print("                2.STUDENTS                          ")
+    print("                3.TUTION CENTRE                     ")   
+    print("                4.COURSES                           ")
+    print("                5.CONTACT INFORMATION               ")   
+    print("                6.EXIT                              ")
+    i=(int(input("PRESS THE NUMBERS GIVEN ABOVE TO GET MENTIONED INFORMATION")))
+    if i==1:
+        print(" Name of Instructors ")
+        class instructors:
+            def __init__(self,name,qua,exp):
+                self.name=name
+                self.qua=qua
+                self.exp=exp
+        ins1=instructors("Ali Sher","M.phil CS","2 years")
+        ins2=instructors("Ma'am Ayesha Hakim","Phd CS","4 years")
+        print("1.NAME: "+ins1.name)
+        print("  QUALIFICATION: "+ins1.qua)
+        print("  EXPEREINCE: "+ins1.exp)
+        print("2.NAME: "+ins2.name)
+        print("  QUALIFICATION: "+ins2.qua)
+        print("  EXPEREINCE: "+ins2.exp)
+    elif i==2:
+        print(" Name of students ")
+        class students:
+            def __init__(self,name,reg_no,section):
+                self.name=name
+                self.reg_no=reg_no
+                self.section=section
+        std1=students("Ahmad","2022-uam-1910","BsCS(D)")
+        std2=students("Amjad","2022-uam-1969","BsCS(D)")
+        std3=students("sameena","2022-uam-1973","BsCs(D)")
+        print("1.NAME: "+std1.name)
+        print("  Registration num: "+std1.reg_no)
+        print("  SECTION: "+std1.section)
+        print("2.NAME: "+std2.name)
+        print("  Registration num: "+std2.reg_no)
+        print("  SECTION: "+std2.section)
+        print("3.NAME: "+std3.name)
+        print("  Registration num: "+std3.reg_no)
+        print("  SECTION: "+std3.section)
+    elif i==3:
+        print(" Ali Sher Tution centre ")
+        print("Office :1")
+        print("Rooms :14")
+        print("Staff Roooms :2")
+        print("Play grounds :2")
+    elif i==4:
+        print(" courses list ")
+        print("1.Web Designing,development & templates")
+        print("2.LOGO Creation")
+        print("3.Flash Animation")
+        print("4.Graphic designing")
+        print("5.Machine Learniing")
+    elif i==5:
+        print(" Contact Information ")
+        class contact_info:
+            def __init__(self,adress,phn_num,E_mail):
+                self.adress=adress
+                self.phn_num=phn_num
+                self.E_mail=E_mail
+        ci1=contact_info("chungi no 6,bosan road,Multan.","061-5678345","Alisheracadmey@gmial.com")
+        print("Address: "+ci1.adress)
+        print("Contact number: "+ci1.phn_num)
+        print("Email: "+ci1.E_mail)
+    elif i==6:
+        print("                                        ")
+        print("               Good Bye !")
+        l=1
